@@ -142,3 +142,4 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.temp
+\n# Local credentials file\ndefault_credentials.txt
