@@ -118,23 +118,31 @@ pnpm start
 ```
 hostel-management-system/
 ├── public/
-│   ├── index.html              # Main HTML template
-│   └── favicon.ico             # Site favicon
+│   ├── index.html                 # Main HTML template
+│   └── favicon.ico                # Site favicon
 ├── src/
-│   ├── components/
-│   │   ├── Login.js            # Login component with authentication
-│   │   ├── Login.css           # Login page styles
-│   │   ├── SignUp.js           # Registration component
-│   │   ├── SignUp.css          # Signup page styles
-│   │   ├── Dashboard.js        # Main dashboard component
-│   │   └── Dashboard.css       # Dashboard styles
-│   ├── App.js                  # Main application component
-│   ├── App.css                 # Global application styles
-│   ├── index.js                # Application entry point
-│   └── index.css               # Global styles and resets
-├── .gitignore                  # Git ignore rules
-├── package.json                # Project dependencies and scripts
-└── README.md                   # Project documentation
+│   ├── components/                # React components (UI)
+│   ├── utils/
+│   │   └── storage.js             # LocalStorage helpers (temporary client store)
+│   ├── App.js                     # Main application component
+│   ├── App.css                    # Global application styles
+│   ├── index.js                   # Application entry point
+│   └── index.css                  # Global styles and resets
+├── backend/                       # Node.js/Express API (auth, requests, complaints)
+│   ├── src/
+│   │   ├── routes/                # API route modules
+│   │   ├── middleware/            # Auth/role middleware
+│   │   ├── utils/                 # Store helpers
+│   │   └── server.js              # Express server
+│   ├── .env.example               # Backend environment example
+│   └── package.json               # Backend dependencies and scripts
+├── data/                          # App data exports and local files (ignored)
+│   └── hostel_database.xlsx       # Excel workbook (Users, Requests, Complaints, Rooms)
+├── docs/                          # Project documentation
+│   └── backend.md                 # Backend README
+├── .gitignore                     # Git ignore rules
+├── package.json                   # Frontend dependencies and scripts
+└── README.md                      # Project documentation
 ```
 
 ### Component Architecture
