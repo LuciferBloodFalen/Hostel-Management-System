@@ -143,3 +143,9 @@ Desktop.ini
 *.tmp
 *.temp
 \n# Local credentials file\ndefault_credentials.txt
+
+# Local data and env
+data/
+*.xlsx
+.env
+.env.local
